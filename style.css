@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: white;
 }
 .header {
     background-color: antiquewhite
@@ -192,3 +192,286 @@ hr {
     height: 30px;
     padding: 7px;
   }
+
+  /* Talent section */
+  .talent-container {
+    display: flex;
+  }
+  .split-img-left {
+    float: left;
+    margin: 0 95px;
+    width: -14%;
+    width: 50%;
+  }
+  .split-img-left img {
+    width: 503%;
+    margin-left: -95px;  
+}
+  .split-text-right {
+    right: 30px;
+    float: left;
+    margin: 178px 354px 0 276px;  
+    padding-left: 29px;
+}
+.split-text-right hr {
+    width: 116%;
+    margin-left: 5px;
+}
+.bi-arrow-right-circle {
+    border: 1px solid rgb(232, 123, 29);
+    border-radius: 33px;
+}
+
+/* Companies Section */
+.companies__container {
+    display: flex;
+}
+.companies__img_left {
+    width: 50%;
+}
+.companies__img_left img {
+    width: 376%;
+    margin-left: 53px;
+    margin-top: 30px;
+    height: 75%;
+}
+.companies__img_right {
+    margin-left: 277px;
+}
+.companies__img_right img {
+    width: 168%;
+    margin-left: 277px;
+    margin-top: 27px;
+}
+.companies-text {
+    margin-top: 418px;
+    width: 179%;
+    margin-left: -63px;
+}
+.companies-text hr {
+    width: 75%;
+    margin-left: 5px;
+}
+
+/* Role Section */
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.card {
+    background-color: rgba(255, 248, 238, 0.404) ;
+}
+
+.card hr {
+    width: 100%;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
+.carousel-control-prev {
+    margin-top: 44%;
+    margin-left: 36%;
+    background-color: none;
+}
+
+.carousel-control-next {
+    margin-top: 44%;
+    margin-right: 43%;
+}
+
+/* Recruitment section */
+.recruitment__title_header {
+    color: black;
+    margin-top: 19%;
+    margin-left: 10%;
+}
+.recruitment__title {
+    margin-top: 19%;
+    color: rgb(254, 167, 91) ;
+    font-size: 13px;
+}
+.recruitment__cards {
+    display: flex;
+    margin-top: 9%;
+    width: 81%;
+    margin-left: 12%;
+}
+.recruitment__card_one img {
+    margin-bottom: -53px;
+}
+.recruitment__card_two img {
+    margin-bottom: -56px;
+}
+.recruitment__card_three img {
+    margin-bottom: -71px;
+}
+
+.hr-one {
+    width: 91%;
+    margin-left: 2px;
+}
+
+.hr-two {
+    width: 94%;
+    margin-left: 5px;
+}
+.hr-three {
+    margin-left: 5px;
+    width: 91%;
+}
+
+.info {
+    font-size: 13px;
+}
+.recruitment__directors h6 {
+    font-size: 13px;
+}
+
+/* Insights section */
+.insights__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.insights__title h6 {
+    margin-left: 85%;
+    margin-top: -52px;
+}
+.insights {
+    margin-top: 15px;
+    width: 100%;
+    margin-left: 5px;
+    margin-bottom: -7px;
+}
+
+.insights__cards {
+    width: 97%;
+    display: flex;
+    gap: 22px;
+    padding: 87px;
+}
+
+.insights__card-img-overlay {
+    position: absolute;
+    top: 5;
+    /* top: 7px; */
+    color: white;
+    width: 21%;
+    transform: translate(3%, -110%);
+}
+
+.insights__card-img-overlay h6 {
+    color: rgb(254, 167, 91);
+}
+.card-img {
+    height: 197%;
+}
+.insights__card-text svg {
+    border: 1px solid rgb(254, 167, 91);
+    border-radius: 33px;
+    padding: 5px;
+    width: 11%;
+    height: 11%;
+    margin-left: 7px
+}
+
+/* conversation section */
+
+.conversation__container {
+    margin-left: 7%;
+    margin-top: 20%;
+}
+
+.conversation hr {
+    width: 92%;
+    margin-left: -1px;
+    margin-top: 59px;
+}
+
+.conversation h6 {
+    margin-left: 88%;
+    margin-top: -47px;
+}
+
+.conversation__title h1 {
+    font-size: 74px;
+    margin-left: 3px;
+}
+
+.conversation__title p {
+    margin-top: 33px;
+    width: 40%;
+}
+
+.conversation__title svg {
+    border: 1px solid rgb(254, 167, 91);
+    border-radius: 33px;
+    width: 14%;
+    height: 14%;
+    padding: 4px;
+}
+
+/* footer section */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+  }
+  
+  footer .container {
+    max-width: 1200px;
+  }
+  
+  footer .col-md-3 {
+    margin-bottom: 20px;
+  }
+
+  footer .col-md-3  hr{
+    margin-left: 2px;
+    width: 94%;
+  }
+
+  footer .form-control {
+    width: 59%;
+  }
+
+  footer svg {
+    margin-top: -64px;
+    margin-left: 179px;
+    border: 1px solid blue;
+    border-radius: 33px;
+    width: 12%;
+    height: 12%;
+  }
+  
+  /* Add more custom styles as needed */
+  
