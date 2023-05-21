@@ -99,9 +99,7 @@ body {
 }
 hr {
     border: 3;
-    /* height: 1px; */
     background: rgb(232, 123, 29);
-    /* background-image: linear-gradient(to right, #ccc, #333, #ccc); */
     width: 40%;
     text-align: center;
     margin-left: 33%;
@@ -168,9 +166,16 @@ hr {
     }
     .input-group {
     position: absolute;
-    top: 59%;
+    top: 67%;
     left: 54%;
     gap: 6px;
+    }
+     .bi-list {
+    color: rgb(232, 123, 29);
+    border: 1px solid rgb(232, 123, 29);
+    border-radius: 33px;
+    width: 3%;
+    height: 5%;
     }
     
 }
@@ -186,7 +191,6 @@ hr {
 .split {
     height: 50%;
     width: 50%;
-    /* position: fixed; */
     z-index: 1;
     top: 0;
     overflow-x: hidden;
@@ -210,7 +214,6 @@ hr {
   /* Control the right side */
   .right {
     right: 30px;
-    /* background-color: red; */
     background-repeat: no-repeat; 
     background-attachment: fixed;
 }
@@ -219,7 +222,6 @@ hr {
     width: 100%;
 }
   
-  /* If you want the content centered horizontally and vertically */
   .centered {
     text-align: center;
     height: 455px;
@@ -244,7 +246,6 @@ hr {
   .split {
     height: 50%;
     width: 50%;
-    /* position: fixed; */
     z-index: 1;
     top: 0;
     overflow-x: hidden;
@@ -479,40 +480,56 @@ hr {
   }
 
 
-@media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
+    .carousel-inner .carousel-item {
+      width: 100%;
+      display: block;
+    }
+    .card {
+        height: 320px;
+    }
+    .container .text-center .my-3{
+        margin-left: 21%;
 
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(25%);
-    }
-    .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-25%);
-    }
-    .carousel-item-three .card {
-        height: 19em;
-    }
-    .carousel-item-three .card-title {
-        margin-top: 12px;
-    }
-    .carousel-item-three p {
-        margin-top: 9px;
-    }
-    .carousel-control-prev .carousel-control-next {
-        margin-top: 89%;
-    }
-}
-@media screen and (min-width: 1200px) {
-    .carousel-control-prev,
-    .carousel-control-next {
-      margin-top: 44%;
     }
   }
+  @media screen and (min-width: 1200px) {
+    /* .carousel-control-prev,
+    .carousel-control-next {
+      margin-top: 20px;
+    } */
+    .carousel-inner {
+        display: flex;
+      }
+      
+      .carousel-item {
+        width: 100%;
+        display: flex;
+      }
+      
+      .card {
+        flex: 1;
+      }
+      
+      .card {
+        background-color: rgba(255, 248, 238, 0.404);
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .card-content {
+        flex-grow: 1;
+      }
+      
+      .card hr {
+        width: 100%;
+      }
+      .role__text {
+        margin-left: 7%;
+      }
+      
+  }
+  
 
 
 
@@ -564,6 +581,7 @@ hr {
 }
 .recruitment__directors h6 {
     font-size: 13px;
+    color: rgb(232, 123, 29);;
 }
 @media screen and (min-width: 768px){
     .recruitment__cards {
@@ -640,6 +658,9 @@ hr {
     }
 }
 @media screen and (min-width: 1200px) {
+    .insights {
+        margin-top: -14%;
+    }
     .insights__card-img-overlay {
     margin-top: -3%;
     padding: 9px;
@@ -695,6 +716,7 @@ hr {
 footer {
     background-color: #f8f9fa;
     padding: 20px 0;
+    color: rgb(21, 21, 63);
   }
   
   footer .container {
@@ -731,9 +753,25 @@ footer {
   @media screen and (min-width: 1200px) {
     footer {
     margin-top: 11%;
-    margin-left: 4%;
     width: 100%;
     }
+    .social-icons {
+        display: flex;
+        align-items: center;
+      }
+      
+      .social-icons svg {
+        margin-right: 10px;
+      }
+      footer hr {
+        width: 100%;
+        margin-left: 1%;
+      }
+      .smaller__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+      }
   }
   
   /* Add more custom styles as needed */
